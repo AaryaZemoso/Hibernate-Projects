@@ -1,0 +1,4 @@
+#
+#Mon Jul 26 16:40:03 IST 2021
+entity.InstructorDetail=javax.persistence.Entity,javax.persistence.Table
+entity.Instructor=javax.persistence.Entity,javax.persistence.Table
