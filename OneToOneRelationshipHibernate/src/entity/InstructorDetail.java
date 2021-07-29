@@ -19,6 +19,14 @@ public @Data class InstructorDetail {
     @Column(name = "hobby")
     private String hobby;
 
+    /*
+        We create the following Field and map it.
+        So that we create a Bidirectional Link.
+     */
+    @OneToOne(mappedBy = "instructorDetail",
+            cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
+    private Instructor instructor;
+
     public InstructorDetail()
     {
 
@@ -30,4 +38,13 @@ public @Data class InstructorDetail {
         this.hobby = hobby;
     }
 
+    @Override
+    public String toString() {
+        return "InstructorDetail{" +
+                "id=" + id +
+                ", youtubeChannel='" + youtubeChannel + '\'' +
+                ", hobby='" + hobby + '\'' +
+                ", instructor=" + instructor +
+                '}';
+    }
 }

@@ -19,8 +19,8 @@ public class CreateDemo {
 
         try{
 
-            Instructor musk = new Instructor("Elon", "Musk", "elonmusk@tesla.com");
-            InstructorDetail muskDetail = new InstructorDetail("youtube.com/tesla", "Experimenting stuff");
+            Instructor musk = new Instructor("Sanath", "", "sanath@zemoso.com");
+            InstructorDetail muskDetail = new InstructorDetail("youtube.com/sanath", "Gaming");
 
             musk.setInstructorDetail(muskDetail);
 

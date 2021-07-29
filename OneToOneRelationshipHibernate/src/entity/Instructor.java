@@ -33,4 +33,14 @@ public @Data class Instructor {
         this.lastName = lastName;
         this.email = email;
     }
+
+    @Override
+    public String toString() {
+        return "Instructor{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
 }
